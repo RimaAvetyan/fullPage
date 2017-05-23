@@ -81,10 +81,12 @@ p{
 	-webkit-border-radius: 10px;
             border-radius: 10px;
 }
+
+/*Wyłączenie podświetlania (Jacek Seń)*/
 #menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+	/*background:#666;*/
+	/*background: rgba(0,0,0, 0.5);*/
+	/*color: #fff;*/
 }
 #menu li a{
 	text-decoration:none;
@@ -101,8 +103,9 @@ p{
 	padding: 9px 18px;
 	display:block;
 }
+/*Wyłączenie podświetlania (Jacek Seń)*/
 #menu li.active a{
-	color: #fff;
+	/*color: #fff;*/
 }
 #menu{
 	position:fixed;

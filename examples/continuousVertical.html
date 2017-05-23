@@ -3,10 +3,10 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Continuous scrolling - fullPage.js</title>
-        <meta name="author" content="Matthew Howell" />
-        <meta name="description" content="fullPage continuous scrolling demo." />
-        <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+        <title>CMR</title>
+        <meta name="author" content="Jacek Seń, Rima Avetyan" />
+        <meta name="description" content="CMR" />
+        <meta name="keywords"  content="CMR" />
         <meta name="Resource-type" content="Document" />
 
 
@@ -25,26 +25,15 @@
         <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
 
         <script type="text/javascript" src="../jquery.fullPage.js"></script>
-
-<!--        <script type="text/javascript">
-            $(document).ready(function () {
-                $.fn.fullpage({
-                    slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-                    menu: '#menu',
-                    continuousVertical: true
-                });
-            });
-        </script>-->
+        <script type="text/javascript" src="examples.js"></script>
 
 
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#fullpage').fullpage({
-                    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
-                    menu: '#menu',
-                    continuousVertical: true
+                    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddcc', '#ccddff'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thPage','lastPage'],
+                    menu: '#menu'
                 });
             });
         </script>
@@ -53,62 +42,43 @@
     <body>
 
 
-                <ul id="menu">
-                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Strona główna</a></li>
-                    <li data-menuanchor="secondPage"><a href="#secondPage">Instrukcje</a></li>
-                    <li data-menuanchor="3rdPage"><a href="#3rdPage">ERS Informacje</a></li>
-                    <li data-menuachor="4thPage"><a href="#4thPage">Strefy EEZ</a></li>
-                    <li data-menuachor="5thPage"><a href="#5thPage">Kontakt</a></li>
-                    <li><a href="#">Nowy SIRM</a></li>
-                </ul>
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Strona główna</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage">Instrukcje</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage">ERS Informacje</a></li>
+            <li data-menuachor="4thpage"><a href="#4thpage">Strefy EEZ</a></li>
+            <li data-menuachor="5thPage"><a href="#5thPage">Kontakt</a></li>
+            <li><a href="#">Nowy SIRM</a></li>
+        </ul>
 
 
         <div id="fullpage">
 
-            <!--            <div class="section " id="section0">
-                            <h1>Strona główna</h1>
-                        </div>
-            
-                        <div class="section" id="section1">
-                            <div class="intro">
-                                <h1>Instrukcje</h1>
-                            </div>
-                        </div>
-                        
-                        <div class="section" id="section2">
-                            <div class="intro">
-                                <h1>ERS informacje</h1>
-                            </div>
-                        </div>
-                        
-                        <div class="section" id="section3">
-                            <div class="intro">
-                                <h1>Strefy EEZ</h1>
-                            </div>
-                        </div>
-                        
-                        <div class="section" id="section4">
-                            <div class="intro">
-                                <h1>Kontakt</h1>
-                            </div>
-                        </div>-->
-
             <div class="section active" id="section0">
-                <h1>Initial Section</h1>
+                <h1>Section 0</h1>
+                <p>firstPage</p>
             </div>
 
             <div class="section" id="section1">
                 <div class="slide active">
                     <div class="wrap">
                         <h1>Section 1</h1>
+                        <p>secondPage</p>
+                        <p>asfjasdlkf jslkadjflk asdjf </p>
                     </div>
                 </div>
+
                 <div class="slide">
                     <h1>This is an awesome plugin</h1>
+                    <p>
+                        Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat.
+                    </p>
                 </div>
+
                 <div class="slide">
                     <h1>Which enables you to create awesome websites</h1>
                 </div>
+
                 <div class="slide">
                     <h1>In the most simple way ever</h1>
                 </div>
@@ -117,14 +87,18 @@
 
             <div class="section" id="section2">
                 <h1>Section 2</h1>
+                <p>3rdpage</p>
+
             </div>
 
             <div class="section" id="section3">
                 <h1>Section 3</h1>
+                <p>4thpage</p>
             </div>
-            
+
             <div class="section" id="section4">
                 <h1>Section 4</h1>
+                <p>5thPage</p>
             </div>
 
         </div>

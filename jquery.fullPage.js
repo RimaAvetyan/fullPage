@@ -125,13 +125,13 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 1200,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
-            loopBottom: false,
+            loopBottom: true,
             loopTop: false,
             loopHorizontal: true,
             continuousVertical: false,
