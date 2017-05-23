@@ -25,6 +25,19 @@
         <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
 
         <script type="text/javascript" src="../jquery.fullPage.js"></script>
+
+<!--        <script type="text/javascript">
+            $(document).ready(function () {
+                $.fn.fullpage({
+                    slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                    menu: '#menu',
+                    continuousVertical: true
+                });
+            });
+        </script>-->
+
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#fullpage').fullpage({
@@ -40,45 +53,80 @@
     <body>
 
 
-        <ul id="menu">
-            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Strona główna</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">Instrukcje</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">ERS Informacje</a></li>
-            <li data-menuachor="4thPage"><a href="#4thPage">Strefy EEZ</a></li>
-            <li data-menuachor="5thPage"><a href="#5thPage">Kontakt</a></li>
-            <li><a href="#">Nowy SIRM</a></li>
-        </ul>
+                <ul id="menu">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Strona główna</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">Instrukcje</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">ERS Informacje</a></li>
+                    <li data-menuachor="4thPage"><a href="#4thPage">Strefy EEZ</a></li>
+                    <li data-menuachor="5thPage"><a href="#5thPage">Kontakt</a></li>
+                    <li><a href="#">Nowy SIRM</a></li>
+                </ul>
+
 
         <div id="fullpage">
 
-            <div class="section " id="section0">
-                <h1>Strona główna</h1>
+            <!--            <div class="section " id="section0">
+                            <h1>Strona główna</h1>
+                        </div>
+            
+                        <div class="section" id="section1">
+                            <div class="intro">
+                                <h1>Instrukcje</h1>
+                            </div>
+                        </div>
+                        
+                        <div class="section" id="section2">
+                            <div class="intro">
+                                <h1>ERS informacje</h1>
+                            </div>
+                        </div>
+                        
+                        <div class="section" id="section3">
+                            <div class="intro">
+                                <h1>Strefy EEZ</h1>
+                            </div>
+                        </div>
+                        
+                        <div class="section" id="section4">
+                            <div class="intro">
+                                <h1>Kontakt</h1>
+                            </div>
+                        </div>-->
+
+            <div class="section active" id="section0">
+                <h1>Initial Section</h1>
             </div>
 
             <div class="section" id="section1">
-                <div class="intro">
-                    <h1>Instrukcje</h1>
+                <div class="slide active">
+                    <div class="wrap">
+                        <h1>Section 1</h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1>This is an awesome plugin</h1>
+                </div>
+                <div class="slide">
+                    <h1>Which enables you to create awesome websites</h1>
+                </div>
+                <div class="slide">
+                    <h1>In the most simple way ever</h1>
                 </div>
             </div>
-            
+
+
             <div class="section" id="section2">
-                <div class="intro">
-                    <h1>ERS informacje</h1>
-                </div>
+                <h1>Section 2</h1>
             </div>
-            
+
             <div class="section" id="section3">
-                <div class="intro">
-                    <h1>Strefy EEZ</h1>
-                </div>
+                <h1>Section 3</h1>
             </div>
             
             <div class="section" id="section4">
-                <div class="intro">
-                    <h1>Kontakt</h1>
-                </div>
+                <h1>Section 4</h1>
             </div>
-            
+
         </div>
 
     </body>
